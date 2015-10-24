@@ -1,6 +1,7 @@
 # music.harmonizer
 
 [![Build Status](https://travis-ci.org/danigb/music.harmonizer.svg?branch=master)](https://travis-ci.org/danigb/music.harmonizer)
+[![Test Coverage](https://codeclimate.com/github/danigb/music.harmonizer/badges/coverage.svg)](https://codeclimate.com/github/danigb/music.harmonizer/coverage)
 [![Code Climate](https://codeclimate.com/github/danigb/music.harmonizer/badges/gpa.svg)](https://codeclimate.com/github/danigb/music.harmonizer)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 [![npm version](https://img.shields.io/npm/v/music.harmonizer.svg)](https://www.npmjs.com/package/music.harmonizer)
@@ -10,6 +11,7 @@
 An harmonizer is a function that 'harmonizes' a note:
 
 ```js
+var harmonizer = require('music.harmonizer')
 var maj7 = harmonizer('1 3 5 7')
 maj7('D') // => ['D', 'F#', 'A', 'C#']
 dorian = harmonizer('D E F G A B C')
@@ -18,7 +20,7 @@ dorian('C') // => ['C', 'D', 'Eb', 'F', 'G' 'A', 'Bb']
 
 ## Install
 
-Cooming soon.
+Currently only via npm: `npm i --save music.harmonizer`
 
 ## Usage
 
