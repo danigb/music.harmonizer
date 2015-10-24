@@ -1,8 +1,10 @@
 CHANGELOG
 
+[0.0.3] Update dependencies. Simplify code.
 [0.0.2] Get intervals if the note is false
 [0.0.1] First version
 
 DIST SIZE
+[0.0.3] 19946 / 7249
 [0.0.2] 20892 / 8471
 [0.0.1] 20341 / 8434

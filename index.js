@@ -1,7 +1,7 @@
 'use strict'
 
 var gamut = require('music.gamut')
-var operator = require('music.operator')
+var operator = require('music.pitch.operator')
 var notation = require('music.notation')
 
 /**
@@ -25,7 +25,7 @@ function harmonizer (intervals, tonic) {
     var intervals = toIntervals(g)
     if (tonic === false) return intervals
     var t = notation.arr(tonic)
-    return intervals.map(function (i) { return operator.add(i, t) })
+    return intervals.map(operator.addTo(t))
   }, intervals)
 }
 
