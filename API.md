@@ -11,7 +11,7 @@
 </div>
 <dl>
 <dt>
-<h4 class="name" id="harmonizer"><span class="type-signature"></span>harmonizer<span class="signature">(source, note)</span><span class="type-signature"> &rarr; {Array.&lt;String>|Array.&lt;Array.&lt;Integer>>}</span></h4>
+<h4 class="name" id="harmonizer"><span class="type-signature"></span>harmonizer<span class="signature">(source, note)</span><span class="type-signature"> &rarr; {Array}</span></h4>
 </dt>
 <dd>
 <div class="description">
@@ -33,9 +33,7 @@
 <td class="type">
 <span class="param-type">String</span>
 |
-<span class="param-type">Array.&lt;String></span>
-|
-<span class="param-type">Array.&lt;Array.&lt;Integer>></span>
+<span class="param-type">Array</span>
 </td>
 <td class="description last"><p>the intervals or notes</p></td>
 </tr>
@@ -44,9 +42,9 @@
 <td class="type">
 <span class="param-type">String</span>
 |
-<span class="param-type">Array.&lt;Integer></span>
+<span class="param-type">Array</span>
 </td>
-<td class="description last"><p>the note to harmonize</p></td>
+<td class="description last"><p>the note to harmonize (as string or array notation)</p></td>
 </tr>
 </tbody>
 </table>
@@ -69,9 +67,7 @@
 Type
 </dt>
 <dd>
-<span class="param-type">Array.&lt;String></span>
-|
-<span class="param-type">Array.&lt;Array.&lt;Integer>></span>
+<span class="param-type">Array</span>
 </dd>
 </dl>
 <h5>Example</h5>

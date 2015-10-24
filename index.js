@@ -9,9 +9,9 @@ var notation = require('music.notation')
  *
  * This function is currified, so it can be partially applied
  *
- * @param {String|Array<String>|Array<Array<Integer>>} source - the intervals or notes
- * @param {String|Array<Integer>} note - the note to harmonize
- * @return {Array<String>|Array<Array<Integer>>} the list of notes
+ * @param {String|Array} source - the intervals or notes
+ * @param {String|Array} note - the note to harmonize (as string or array notation)
+ * @return {Array} the list of notes
  *
  * @example
  * harmonize('1 2 3 4', 'D') // => ['D', 'E', 'F#', 'G']
