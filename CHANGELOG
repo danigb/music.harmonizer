@@ -1,5 +1,6 @@
 CHANGELOG
 
+[0.0.4] Bug fix: pitch classes now are handled correctly
 [0.0.3] Update dependencies. Simplify code.
 [0.0.2] Get intervals if the note is false
 [0.0.1] First version

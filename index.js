@@ -30,7 +30,7 @@ function harmonizer (intervals, tonic) {
 }
 
 function toIntervals (notes) {
-  var t = notes[0]
+  var t = operator.setDefaultOctave(0, notes[0])
   return notes.map(function (n) {
     return n && n.length !== 3 ? operator.subtract(t, n) : n
   })

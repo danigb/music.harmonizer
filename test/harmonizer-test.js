@@ -13,6 +13,7 @@ vows.describe('harmonizer').addBatch({
     assert.deepEqual(harmonizer('C2 E2 G1 B2', 'A4'), ['A4', 'C#5', 'E4', 'G#5'])
   },
   'get intervals': function () {
+    assert.deepEqual(harmonizer('C C0 C1 C2', false), ['1P', '1P', '8P', '15P'])
     assert.deepEqual(harmonizer('d e f g a b c', false), ['1P', '2M', '3m', '4P', '5P', '6M', '7m'])
   },
   'curry': function () {
