@@ -1,0 +1,40 @@
+{
+  "name": "music.harmonizer",
+  "version": "0.0.0",
+  "description": "Simple and fast music harmonizer",
+  "main": "index.js",
+  "scripts": {
+    "test": "vows --spec test/*.js",
+    "docs": "docme API.md",
+    "browserify": "browserify --full-paths index.js > dist/music.harmonizer.js && browserify --full-paths index.js | uglifyjs > dist/music.harmonizer.min.js",
+    "discify": "discify dist/music.harmonizer.min.js > dist/disc.html && open dist/disc.html",
+    "dist": "npm run browserify && ls -all dist/",
+    "coverage": "istanbul cover vows test/*.js",
+    "cover": "npm run coverage && open ./coverage/lcov-report/index.html",
+    "benchmarks": "node test/benchmarks/*.js",
+    "climate": "npm run coverage && npm run codeclimate",
+    "codeclimate": "CODECLIMATE_REPO_TOKEN=fcfefb53aa586b904e50df4da52d6dc294182107e236117758c3a048b17491ce codeclimate-test-reporter < coverage/lcov.info"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danigb/music.harmonizer.git"
+  },
+  "keywords": [
+    "music",
+    "music.kit"
+  ],
+  "author": "danigb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danigb/music.harmonizer/issues"
+  },
+  "homepage": "https://github.com/danigb/music.harmonizer#readme",
+  "devDependencies": {
+    "vows": "^0.8.1"
+  },
+  "dependencies": {
+    "music.notation": "file:../notation",
+    "music.operator": "file:../operator",
+    "music.transpose": "file:../transpose"
+  }
+}
