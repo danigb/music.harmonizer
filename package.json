@@ -1,6 +1,6 @@
 {
   "name": "music.harmonizer",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Simple and fast music harmonizer",
   "main": "index.js",
   "scripts": {
@@ -32,8 +32,8 @@
     "vows": "^0.8.1"
   },
   "dependencies": {
-    "music.gamut": "0.0.2",
-    "music.notation": "0.0.5",
-    "music.pitch.operator": "0.0.4"
+    "music.gamut": "0.0.x",
+    "music.notation": "0.0.x",
+    "music.pitch.operator": "0.0.x"
   }
 }

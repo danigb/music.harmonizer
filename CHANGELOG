@@ -1,11 +1,13 @@
 CHANGELOG
 
+[0.0.5] Flexible dependencies until release
 [0.0.4] Bug fix: pitch classes now are handled correctly
 [0.0.3] Update dependencies. Simplify code.
 [0.0.2] Get intervals if the note is false
 [0.0.1] First version
 
 DIST SIZE
+[0.0.5] 7216
 [0.0.3] 19946 / 7249
 [0.0.2] 20892 / 8471
 [0.0.1] 20341 / 8434
